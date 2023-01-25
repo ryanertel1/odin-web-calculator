@@ -1,5 +1,95 @@
 :root {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    background: darkgray;
-}
+    background-color: darkgray;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+  }
+  
+  .calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25,25,25);
+    width: 60vw;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    background-color: rgb(105, 103, 105);
+    width: 95%;
+    height: 20%;
+    cursor: default;
+  }
+
+  .result-text {
+    display: flex;
+    font-size: 60px;
+    padding-inline: 10px;
+    cursor: inherit;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 95%;
+    height: 75%;
+    justify-content: space-evenly;
+    cursor: default;
+  }
+  
+  .buttons-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+    height: 17%;
+    cursor: inherit;
+  }
+  
+  .num-button,
+  .num-function,
+  .num-equal {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: 2s;
+    cursor: grab;
+  }
+  
+  .num-button {
+    background-color: rgb(50,50,50);
+    color: lightgray;
+  }
+  
+  .num-function {
+    background-color: rgb(75,75,75);
+    color: lightgray;
+  }
+  
+  .num-equal {
+    background-color: #ab80c2;
+    color: rgb(50,50,50);
+    font-weight: 700;
+  }
+  
